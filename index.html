@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO APP</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <h3>TODO APP</h3>
+        <div id="todoApp">
+            <div class="listOfTodoDiv">
+                <div class="listDisplay">
+                    <ul id="list">
+                    </ul>
+                </div>
+                <div class="addNewList">
+                    <input type="text" placeholder="Type New List Name" class="addListInput"/>
+                    <button id="addList" onclick="newList.createNewListItem()">Add List</button>
+                </div>
+            </div>
+            <div class="listOfTodoTasksDiv">
+                <div class="addNewTask">
+                    <input type="text" placeholder="Type New Task Desc" class="addTaskInput"/>
+                    <button id="addTask" onclick="newList.createNewTask()">Add Task</button>
+                </div>
+                <div class="taskListDisplay">
+                    <ul id="task">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <template id="listTaskRow">
+            <li>
+                <input type="checkbox" onclick="newList.updateTaskStatus(event)">
+                <span onclick="addEditable(event)"></span>
+                <button class="link-button edit-hide" onclick="newList.editTask(event)">Update</button>
+                <button class="link-button" onclick="newList.removeTask(event)">Remove</button>
+            </li>
+        </template>
+
+        <template id="listRow">
+            <li>
+                <span onclick="setListID(event)"></span>
+                <button class="link-button" onclick="newList.removeList(event)">Remove</button>
+            </li>
+        </template>
+    </body>
+    <script src="script.js"></script>
+</html>

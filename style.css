@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+h3 {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    margin-top: 50px;
+}
+#todoApp {
+    margin:0 auto;
+    position:absolute;
+    left:0;
+    right: 0;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    margin-top: 50px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    padding: 7px;
+    background-color: #dadada;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+ul li:nth-child(odd) {
+    background-color: #fff;
+}
+ul li a {
+    float: right;
+    color: cadetblue;
+}
+ul li a:hover {
+    color: black;
+}
+.listDisplay ul {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+.taskListDisplay ul {
+    margin-bottom: 0;
+}
+.taskListDisplay {
+    display: none;
+}
+button {
+    padding: 10px;
+    width: 100px;
+    background-color: cadetblue;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+button:hover {
+    color: white;
+}
+input {
+    font-size: 14px;
+}
+.addNewTask input {
+    padding: 8px;
+    width: 250px;
+}
+.addListInput {
+    width: 190px;
+    padding: 8px;
+}
+.listOfTodoDiv,
+.listOfTodoTasksDiv {
+    float: left;
+    background:#f7f7f7;
+}
+.listOfTodoDiv {
+    width: 35%;
+    padding: 10px;
+    padding-right: 50px;
+}
+.listOfTodoTasksDiv {
+    width: 45%;
+    padding: 10px;
+    padding-left: 50px;
+    border-left: 1px #ccc solid;
+}
+.addNewList {
+    position: absolute;
+    bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#list span {
+    width: 80%;
+    float: left;
+}
+
+#list button {
+    width: 20%;
+}
+
+.link-button {
+    display: inline-block;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    color: #000;
+    outline: none;
+}
+
+.link-button:hover {
+    color: cadetblue;
+}
+
+#task input {
+    width: 3%;
+    float: left;
+}
+
+#task span {
+    width: 77%;
+    float: left;
+}
+
+#task button {
+    width: 15%;
+}
+
+.span-edit {
+    border: 1px solid #ccc;
+    padding: 5px;
+    outline: none;
+}
+
+#task button.edit-hide {
+    display: none;
+}
+
+#task button.edit-show {
+    display: block;
+    width: 20%;
+}
